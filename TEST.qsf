@@ -54,10 +54,12 @@ set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_location_assignment PIN_26 -to inpCLK
+set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/generator.bdf
 set_global_assignment -name BSF_FILE source/IP_LIBRARY/PLL/pll.bsf
 set_global_assignment -name BDF_FILE source/main/main.bdf
 set_global_assignment -name SOURCE_FILE source/main/main.qsf
 set_global_assignment -name QIP_FILE source/IP_LIBRARY/PLL/pll.qip
 set_global_assignment -name BDF_FILE source/TEST_BLOCKS/PLL_TEST/PLL_TEST.bdf
+set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/100INVERTORS/invertors100.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_location_assignment PIN_23 -to inpCLK
