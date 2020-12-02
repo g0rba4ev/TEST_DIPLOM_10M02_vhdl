@@ -55,6 +55,7 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
 set_location_assignment PIN_26 -to inpCLK
+set_global_assignment -name VHDL_FILE source/util/mux4ram.vhd
 set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/generator.bdf
 set_global_assignment -name BSF_FILE source/IP_LIBRARY/PLL/pll.bsf
 set_global_assignment -name BDF_FILE source/main/main.bdf
@@ -62,4 +63,36 @@ set_global_assignment -name SOURCE_FILE source/main/main.qsf
 set_global_assignment -name QIP_FILE source/IP_LIBRARY/PLL/pll.qip
 set_global_assignment -name BDF_FILE source/TEST_BLOCKS/PLL_TEST/PLL_TEST.bdf
 set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/100INVERTORS/invertors100.bdf
+set_location_assignment PIN_3 -to we
+set_location_assignment PIN_4 -to sel4ramCLK
+set_location_assignment PIN_5 -to ram_address[0]
+set_location_assignment PIN_6 -to ram_address[1]
+set_location_assignment PIN_7 -to ram_address[2]
+set_location_assignment PIN_8 -to ram_address[3]
+set_location_assignment PIN_9 -to ram_address[4]
+set_location_assignment PIN_10 -to ram_address[5]
+set_location_assignment PIN_19 -to ram_address[6]
+set_location_assignment PIN_21 -to ram_address[7]
+set_location_assignment PIN_23 -to ram_address[8]
+set_location_assignment PIN_24 -to ram_address[9]
+set_location_assignment PIN_25 -to ram_address[10]
+set_location_assignment PIN_27 -to ram_address[11]
+set_location_assignment PIN_28 -to ram_address[12]
+set_location_assignment PIN_31 -to ram_address[13]
+set_location_assignment PIN_33 -to ram_data[0]
+set_location_assignment PIN_39 -to ram_data[1]
+set_location_assignment PIN_40 -to ram_data[2]
+set_location_assignment PIN_41 -to ram_data[3]
+set_location_assignment PIN_42 -to ram_data[4]
+set_location_assignment PIN_44 -to ram_data[5]
+set_location_assignment PIN_46 -to ram_data[6]
+set_location_assignment PIN_47 -to ram_data[7]
+set_location_assignment PIN_48 -to RAM_OUT[0]
+set_location_assignment PIN_49 -to RAM_OUT[1]
+set_location_assignment PIN_50 -to RAM_OUT[2]
+set_location_assignment PIN_51 -to RAM_OUT[3]
+set_location_assignment PIN_52 -to RAM_OUT[4]
+set_location_assignment PIN_53 -to RAM_OUT[5]
+set_location_assignment PIN_54 -to RAM_OUT[6]
+set_location_assignment PIN_55 -to RAM_OUT[7]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

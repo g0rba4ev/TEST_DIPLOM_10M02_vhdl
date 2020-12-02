@@ -3,6 +3,7 @@
 # *.v
 
 # My settings
+.qsys_edit/
 __Previews/
 debug.log
 greybox_tmp/
