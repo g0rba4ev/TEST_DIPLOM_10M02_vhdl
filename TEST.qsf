@@ -55,7 +55,6 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
 set_location_assignment PIN_26 -to inpCLK
-set_global_assignment -name VHDL_FILE source/util/mux4ram.vhd
 set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/generator.bdf
 set_global_assignment -name BSF_FILE source/IP_LIBRARY/PLL/pll.bsf
 set_global_assignment -name BDF_FILE source/main/main.bdf
