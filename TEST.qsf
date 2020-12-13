@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 10M02SCE144C8G
 set_global_assignment -name TOP_LEVEL_ENTITY main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:44:57  NOVEMBER 27, 2020"
-set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 SP0.02std Lite Edition"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -55,13 +55,6 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
 set_location_assignment PIN_26 -to inpCLK
-set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/generator.bdf
-set_global_assignment -name BSF_FILE source/IP_LIBRARY/PLL/pll.bsf
-set_global_assignment -name BDF_FILE source/main/main.bdf
-set_global_assignment -name SOURCE_FILE source/main/main.qsf
-set_global_assignment -name QIP_FILE source/IP_LIBRARY/PLL/pll.qip
-set_global_assignment -name BDF_FILE source/TEST_BLOCKS/PLL_TEST/PLL_TEST.bdf
-set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/100INVERTORS/invertors100.bdf
 set_location_assignment PIN_3 -to we
 set_location_assignment PIN_4 -to sel4ramCLK
 set_location_assignment PIN_5 -to ram_address[0]
@@ -94,4 +87,17 @@ set_location_assignment PIN_52 -to RAM_OUT[4]
 set_location_assignment PIN_53 -to RAM_OUT[5]
 set_location_assignment PIN_54 -to RAM_OUT[6]
 set_location_assignment PIN_55 -to RAM_OUT[7]
+set_global_assignment -name PROJECT_IP_REGENERATION_POLICY ALWAYS_REGENERATE_IP
+set_global_assignment -name BDF_FILE source/main/main.bdf
+set_global_assignment -name SOURCE_FILE source/main/main.qsf
+set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/generator.bdf
+set_global_assignment -name BDF_FILE source/TEST_BLOCKS/PLL_TEST/PLL_TEST.bdf
+set_global_assignment -name BDF_FILE source/TEST_BLOCKS/INV_GENERATOR/100INVERTORS/invertors100.bdf
+set_global_assignment -name BSF_FILE source/IP_LIBRARY/PLL/pll.bsf
+set_global_assignment -name QIP_FILE source/IP_LIBRARY/PLL/pll.qip
+set_global_assignment -name QIP_FILE source/IP_LIBRARY/FOR_PLL_TEST/COMPARATOR/copmarator.qip
+set_global_assignment -name QIP_FILE source/IP_LIBRARY/FOR_PLL_TEST/CONSTANT01/constant01.qip
+set_global_assignment -name QIP_FILE source/IP_LIBRARY/FOR_PLL_TEST/COUNTER/counter.qip
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

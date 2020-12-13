@@ -7,6 +7,8 @@
 __Previews/
 debug.log
 greybox_tmp/
+quartus_nativelink_synthesis.log
+/simulation/
 
 # ignore Quartus II generated files
 *_generation_script*
