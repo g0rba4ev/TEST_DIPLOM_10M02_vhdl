@@ -72,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 392 -8 568 8)
+	(rect 408 24 584 40)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "ram_data[7..0]" (rect 9 0 80 12)(font "Arial" ))
 	(pt 176 8)
@@ -85,11 +85,11 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 312 -32 368 -8))
+	(annotation_block (location)(rect 360 -8 400 16))
 )
 (pin
 	(input)
-	(rect 392 8 568 24)
+	(rect 408 40 584 56)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "ram_address[13..0]" (rect 9 0 104 12)(font "Arial" ))
 	(pt 176 8)
@@ -102,7 +102,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 280 8 328 32))
+	(annotation_block (location)(rect 360 24 400 48))
 )
 (pin
 	(input)
@@ -986,10 +986,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt -144 200)
 )
 (connector
-	(pt 392 -112)
-	(pt 144 -112)
-)
-(connector
 	(pt 112 200)
 	(pt 144 200)
 )
@@ -998,38 +994,8 @@ https://fpgasoftware.intel.com/eula.
 	(pt 144 344)
 )
 (connector
-	(pt 584 0)
-	(pt 568 0)
-	(bus)
-)
-(connector
 	(pt 592 96)
 	(pt 584 96)
-)
-(connector
-	(pt 592 32)
-	(pt 584 32)
-	(bus)
-)
-(connector
-	(pt 584 32)
-	(pt 584 0)
-	(bus)
-)
-(connector
-	(pt 568 16)
-	(pt 576 16)
-	(bus)
-)
-(connector
-	(pt 576 16)
-	(pt 576 48)
-	(bus)
-)
-(connector
-	(pt 592 48)
-	(pt 576 48)
-	(bus)
 )
 (connector
 	(pt 584 96)
@@ -1068,16 +1034,30 @@ https://fpgasoftware.intel.com/eula.
 	(pt 120 264)
 )
 (connector
+	(pt 344 472)
+	(pt 368 472)
+)
+(connector
+	(pt 592 32)
+	(pt 584 32)
+	(bus)
+)
+(connector
+	(pt 592 48)
+	(pt 584 48)
+	(bus)
+)
+(connector
+	(pt 144 -112)
+	(pt 392 -112)
+)
+(connector
 	(pt 184 488)
 	(pt 120 488)
 )
 (connector
 	(pt 120 264)
 	(pt 120 488)
-)
-(connector
-	(pt 344 472)
-	(pt 368 472)
 )
 (junction (pt 744 64))
 (junction (pt 744 144))
