@@ -84,7 +84,7 @@ https://fpgasoftware.intel.com/eula.
 		(text "0.00" (rect 104 121 224 253)(font "Arial" ))
 		(text "50.00" (rect 136 121 293 253)(font "Arial" ))
 		(text "c2" (rect 54 135 116 281)(font "Arial" ))
-		(text "24/1" (rect 74 135 163 281)(font "Arial" ))
+		(text "6/1" (rect 77 135 164 281)(font "Arial" ))
 		(text "0.00" (rect 104 135 224 281)(font "Arial" ))
 		(text "50.00" (rect 136 135 293 281)(font "Arial" ))
 		(text "c3" (rect 54 149 116 309)(font "Arial" ))

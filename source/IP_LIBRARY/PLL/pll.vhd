@@ -181,7 +181,7 @@ BEGIN
 		clk1_phase_shift => "0",
 		clk2_divide_by => 1,
 		clk2_duty_cycle => 50,
-		clk2_multiply_by => 24,
+		clk2_multiply_by => 6,
 		clk2_phase_shift => "0",
 		clk3_divide_by => 1,
 		clk3_duty_cycle => 50,
@@ -274,7 +274,7 @@ END SYN;
 -- Retrieval info: PRIVATE: DIV_FACTOR0 NUMERIC "1"
 -- Retrieval info: PRIVATE: DIV_FACTOR1 NUMERIC "1"
 -- Retrieval info: PRIVATE: DIV_FACTOR2 NUMERIC "1"
--- Retrieval info: PRIVATE: DIV_FACTOR3 NUMERIC "2"
+-- Retrieval info: PRIVATE: DIV_FACTOR3 NUMERIC "1"
 -- Retrieval info: PRIVATE: DIV_FACTOR4 NUMERIC "3"
 -- Retrieval info: PRIVATE: DUTY_CYCLE0 STRING "50.00000000"
 -- Retrieval info: PRIVATE: DUTY_CYCLE1 STRING "50.00000000"
@@ -283,7 +283,7 @@ END SYN;
 -- Retrieval info: PRIVATE: DUTY_CYCLE4 STRING "50.00000000"
 -- Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE0 STRING "50.000000"
 -- Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE1 STRING "5.000000"
--- Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE2 STRING "1200.000000"
+-- Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE2 STRING "300.000000"
 -- Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE3 STRING "600.000000"
 -- Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE4 STRING "400.000000"
 -- Retrieval info: PRIVATE: EXPLICIT_SWITCHOVER_COUNTER STRING "0"
@@ -318,8 +318,8 @@ END SYN;
 -- Retrieval info: PRIVATE: MIRROR_CLK4 STRING "0"
 -- Retrieval info: PRIVATE: MULT_FACTOR0 NUMERIC "1"
 -- Retrieval info: PRIVATE: MULT_FACTOR1 NUMERIC "1"
--- Retrieval info: PRIVATE: MULT_FACTOR2 NUMERIC "24"
--- Retrieval info: PRIVATE: MULT_FACTOR3 NUMERIC "24"
+-- Retrieval info: PRIVATE: MULT_FACTOR2 NUMERIC "6"
+-- Retrieval info: PRIVATE: MULT_FACTOR3 NUMERIC "12"
 -- Retrieval info: PRIVATE: MULT_FACTOR4 NUMERIC "24"
 -- Retrieval info: PRIVATE: NORMAL_MODE_RADIO STRING "1"
 -- Retrieval info: PRIVATE: OUTPUT_FREQ0 STRING "100.00000000"
@@ -403,7 +403,7 @@ END SYN;
 -- Retrieval info: CONSTANT: CLK1_PHASE_SHIFT STRING "0"
 -- Retrieval info: CONSTANT: CLK2_DIVIDE_BY NUMERIC "1"
 -- Retrieval info: CONSTANT: CLK2_DUTY_CYCLE NUMERIC "50"
--- Retrieval info: CONSTANT: CLK2_MULTIPLY_BY NUMERIC "24"
+-- Retrieval info: CONSTANT: CLK2_MULTIPLY_BY NUMERIC "6"
 -- Retrieval info: CONSTANT: CLK2_PHASE_SHIFT STRING "0"
 -- Retrieval info: CONSTANT: CLK3_DIVIDE_BY NUMERIC "1"
 -- Retrieval info: CONSTANT: CLK3_DUTY_CYCLE NUMERIC "50"
